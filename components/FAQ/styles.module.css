@@ -1,0 +1,13 @@
+
+@import "/app/globals.css";
+
+.show {
+    opacity: 1;
+    grid-template-rows: 1fr;
+}
+
+.hide {
+    opacity: 0;
+    grid-template-rows: 0fr;
+    
+}
