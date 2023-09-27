@@ -7,7 +7,7 @@ import SectionTransitionMarker from '../SectionTransitonMarker/SectionTransitonM
 
 const FAQ = () => {
     return (
-        <div id='calltoaction' >
+        <div id='faq' >
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" />
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -17,17 +17,17 @@ const FAQ = () => {
 
             <SectionTransitionMarker trany='70px' rotation='1.3deg'/>
 
-            <div className="relative font-inter antialiased bg-slate-900 text-white">
+            <div className="relative font-inter antialiased bg-[var(--background)] text-[var(--text)] ">
 
                 <main className="relative min-h-screen flex flex-col justify-center overflow-hidden">
                     <div className="w-full max-w-2xl mx-auto px-4 md:px-6 py-24">
 
-                        <h2 className='text-white text-4xl font-bold flex align-middle items-center text-center justify-center ' >FAQs</h2>
+                        <h2 className='text-[var(--text)]  text-4xl font-bold flex align-middle items-center text-center justify-center ' >FAQs</h2>
 
                         {/* Accordion component */}
                         <div className="divide-y divide-slate-200">
 
-                            <AccordionItem title='Was ist "Brigg RP"?' text='Brigg RP ist ein GTA RP (Grand Theft Auto Roleplay)-Server, auf dem Spieler die Möglichkeit haben, ihre eigenen Charaktere zu erstellen und in einer immersiven Rollenspielwelt in Los Santos zu spielen. Wir bieten ein einzigartiges und spannendes RP-Erlebnis für Spieler aller Erfahrungsstufen.' />
+                            <AccordionItem opened={true} title='Was ist "Brigg RP"?' text='Brigg RP ist ein GTA RP (Grand Theft Auto Roleplay)-Server, auf dem Spieler die Möglichkeit haben, ihre eigenen Charaktere zu erstellen und in einer immersiven Rollenspielwelt in Los Santos zu spielen. Wir bieten ein einzigartiges und spannendes RP-Erlebnis für Spieler aller Erfahrungsstufen.' />
                             <AccordionItem title='Wie kann ich dem Server beitreten?' text='Um dem "Brigg RP" Server beizutreten, musst du dich zuerst auf unserer Website registrieren und eine Charakterbewerbung einreichen. Sobald deine Bewerbung genehmigt wurde, erhältst du die notwendigen Informationen, um auf den Server zu kommen.' />
                             <AccordionItem title='Gibt es Altersbeschränkungen für die Teilnahme?' text='Ja, du musst mindestens 18 Jahre alt sein, um auf unserem Server zu spielen.' />
                             <AccordionItem title='Welche Fraktionen oder Berufe stehen zur Verfügung?' text='Wir bieten eine Vielzahl von Fraktionen und Berufen auf unserem Server an, darunter Polizei, Gangs, Unternehmen und mehr. Du kannst deine Präferenzen wählen und deine eigene Geschichte in Los Santos gestalten.' />

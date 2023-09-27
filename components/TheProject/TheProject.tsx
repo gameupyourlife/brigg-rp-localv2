@@ -5,13 +5,13 @@ import Timeline from '../Timeline/Timeline'
 
 const TheProject = () => {
   return (
-    <div className=' z-10 relative ' >
+    <div className=' z-10 relative ' id='project'>
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className={`rotate-[0deg]`}>
-        <path d="M 0 120 L 1500 16.48 1500 0 0 0 0 120 z" className={`rotate-[1.3deg] fill-slate-900  translate-x-[-1px] translate-y-[80.705px] shape-fill ${false && "outline outline-[15px] outline-[#1180bb]"}`} ></path>
+        <path d="M 0 120 L 1500 16.48 1500 0 0 0 0 120 z" className={`rotate-[1.3deg] fill-[var(--background)]  translate-x-[-1px] translate-y-[80.705px] shape-fill ${false && "outline outline-[15px] outline-[#1180bb]"}`} ></path>
       </svg>
 
-      <section className="flex justify-center align-center py-5 bg-slate-900">
-        <div className="flex flex-col justify-center align-center mx-auto px-6 text-center text-white">
+      <section className="flex justify-center align-center py-5 bg-[var(--background)]">
+        <div className="flex flex-col justify-center align-center mx-auto px-6 text-center text-[var(--text)] ">
           <h2 className='text-4xl font-bold mb-3 '>
             Das Projekt
           </h2>
@@ -26,7 +26,7 @@ const TheProject = () => {
       </section>
 
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className={`rotate-[180deg]`}>
-        <path d="M 0 120 L 1500 16.48 1500 0 0 0 0 120 z" className={`rotate-[1.3deg] fill-slate-900  translate-x-[-1px] translate-y-[80.705px] shape-fill ${false && "outline outline-[15px] outline-[#1180bb]"}`} ></path>
+        <path d="M 0 120 L 1500 16.48 1500 0 0 0 0 120 z" className={`rotate-[1.3deg] fill-[var(--background)]  translate-x-[-1px] translate-y-[80.705px] shape-fill ${false && "outline outline-[15px] outline-[#1180bb]"}`} ></path>
       </svg>
 
 

@@ -8,9 +8,10 @@ export interface TimelineItemI {
 }
 
 const TimelineItem = ({title, desc, date, direction}: TimelineItemI) => {
+    //${direction == "direction-r" ? "left-[120px]" : "right-[120px]"}  
     return (
         <li>
-            <div className={`${direction} w-[500px] relative ${direction == "direction-r" ? "left-[120px]" : "right-[120px]"} `}>
+            <div className={`${direction}  relative `}> 
                 <div className="flag-wrapper">
                     <span className="hexa" />
                     <span className="flag">{title}</span>
@@ -18,7 +19,8 @@ const TimelineItem = ({title, desc, date, direction}: TimelineItemI) => {
                         <span className="time">{date}</span>
                     </span>
                 </div>
-                <div className={`desc bg-transparent text-white ${direction == "direction-r" ? "border-l-2" : "border-r-2"}  `}>
+                {/* ${direction == "direction-r" ? "border-l-2" : "border-r-2"}      */}
+                <div className={`desc bg-[var(--background)] text-[var(--text)]   `}>
                     {desc}
                 </div>
             </div>

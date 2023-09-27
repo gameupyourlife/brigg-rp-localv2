@@ -1,27 +1,51 @@
+"use client"
+
 import React from 'react'
 import Seperator from '../Seperator'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const NavBar = () => {
-    return (
-        <header className=' z-50   bg-slate-900 flex-col pb-0'>
-            <div className='flex z-50 justify-start align-top '>
+    const [navbarOpen, setNavbarOpen] = React.useState(false);
 
-                <a href="#" className='justify-start align-top'
-                ><img
+    function toggleNavbar() {
+        console.log('toggle')
+        setNavbarOpen(!navbarOpen)
+    }
+
+    return (
+        <header className=' z-50   bg-[var(--background)]  py-3 flex max-md:flex-col'>
+            <div className='flex justify-between max-md:w-full '>
+
+                <Link href="/" className=''>
+                    <Image
                         src="/brigglogo.svg"
                         alt="logo"
-                        className="logo"
-                    /></a>
-                <div className=' '>
-                    <nav className="navbar">
-                        <a href="#" className="nav-item text-2xl" >Projekt</a>
-                        <a href="#" className="nav-item text-2xl" >Features</a>
-                        <a href="#" className="nav-item text-2xl" >Fraktionen</a>
-                        <a href="#" className="nav-item text-2xl" >FAQ</a>
-                    </nav>
-                </div>
+                        className="logo mt-0 pt-0"
+                        width={64}
+                        height={64}
+                    />
+                </Link>
+
+                <button className='md:hidden' onClick={e => toggleNavbar()}>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="32px" height="32px" className=' fill-white md:hidden'>
+                        <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" />
+                    </svg>
+                </button>
             </div>
-            <Seperator width='3000' top='10' bottom='0'/>
+
+
+            <div className={`${navbarOpen ? "" : "max-md:hidden"} `}>
+                <nav className="max-md:flex max-md:flex-col max-md:text-center max-md:px-5 max-md:align-middle max-md:justify-center max-md:items-center  ">
+                    <Link href="/#factions" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Fraktionen</Link>
+                    <Link href="/#features" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Features</Link>
+                    <Link href="/team" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Team</Link>
+                    <Link href="/rules" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Regeln</Link>
+                    <Link href="/changelog" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Changelog</Link>
+                    <Link target='_blank' href="https://discord.gg/S2wc2NVGaN" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 text-orange-600 " >Jetzt Spielen!</Link>
+                </nav>
+            </div>
+
         </header>
     )
 }

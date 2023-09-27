@@ -7,10 +7,16 @@ import styles from './styles.module.css'
 export interface AccordionItemI {
     title: string,
     text: string,
+    opened?: boolean
 }
 
-const AccordionItem = ({title, text}: AccordionItemI) => {
-    const [open, SetOpen] = React.useState<boolean>(false);
+const AccordionItem = ({title, text, opened}: AccordionItemI) => {
+    if (opened === undefined || opened === null) {
+        opened = false
+    }
+    const [open, SetOpen] = React.useState<boolean>(opened);
+
+
 
     return (
         <div className="py-2">
@@ -18,7 +24,7 @@ const AccordionItem = ({title, text}: AccordionItemI) => {
 
                 <button id="faqs-title-01" type="button" className="flex items-center justify-between w-full text-left font-semibold py-2" onClick={e => SetOpen(!open)}>
                     <span>{title}</span>
-                    <svg className="fill-indigo-500 shrink-0 ml-8" width={16} height={16} xmlns="http://www.w3.org/2000/svg">
+                    <svg className="fill-[var(--accent)] shrink-0 ml-8" width={16} height={16} xmlns="http://www.w3.org/2000/svg">
                         <rect y={7} width={16} height={2} rx={1} className="transform origin-center transition duration-200 ease-out" style={open ? { transform: "rotate(180deg)" } : {}} />
                         <rect y={7} width={16} height={2} rx={1} className="transform origin-center rotate-90 transition duration-200 ease-out" style={open ? { transform: "rotate(180deg)" } : {}} />
                     </svg>

@@ -20,10 +20,11 @@ const DiscordButton = ({ isSSO, url }: DiscordButtonI) => (
 			backgroundColor: "#7289da",
 			textDecoration: "none"
 		}}
+		target="_blank"
 
         className="max-h-10"
 	>
-		<div style={{ width: 25, height: 25, marginRight: 15 }}  className="text-white fill-white">
+		<div style={{ width: 25, height: 25, marginRight: 15 }}  className="text-[var(--text)]  fill-white">
 			<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
 				<path
 					className="st0"
