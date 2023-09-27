@@ -25,12 +25,12 @@ const Hero = () => {
         //     </div>
         // </div>
 
-        <div className="hero w-full box-border md:px-20 max-md:mx-auto md:-mb-[150px] 2xl:-mb-[300px] ">
+        <div className="hero w-full box-border md:px-20 max-md:mx-auto md:-mb-[150px] 2xl:-mb-[300px]">
             {/* <div className='hero  w-full  h-[inherite] box-border herobgeffects  backdrop-blur-md	'>
             <div className='hero  w-full pl-20 h-[inherite] box-border 	'> */}
 
             <div className='flex-1 flex-wrap pt-36 padding-x h-screen hero_text_div_max_h max-md:justify-center max-md:items-center max-md:align-middle'>
-                <h1 className='max-md:text-center text-6xl font-extrabold pb-3 flex-wrap max-w-screen'>
+                <h1 className='max-md:text-center text-6xl font-extrabold pb-3 flex-wrap max-w-screen max-sm:text4xl mx-0 px-0'>
                    Dein Abenteuer beginnt hier!
                 </h1>
                 <p className='max-md:text-center text-2xl text-gray-200'>
@@ -47,10 +47,17 @@ const Hero = () => {
 
             </div>
                 
-            <div className='hero__image-container max-md:hidden'>
-                <div className='hero__image   p-0 m-0  max-h-[90vh]'>
+            <div className='hero__image-container max-md:hidden -mr-20'>
+                <div className='hero__image   p-0  max-h-[90vh] scale-75 z-30 '>
                     {/* <Image src="/MafiaMan.png" alt='hero' fill className='object-contain'></Image> */}
+                    <Image src="/civWoman.png" alt='hero' fill className='object-contain'></Image>
+                </div>
+                <div className='hero__image   p-0 -ml-60 max-h-[90vh] z-40 -mb-10'>
                     <Image src="/gameup-removebg.png" alt='hero' fill className='object-contain'></Image>
+                </div>
+                <div className='hero__image   p-0 -ml-60  max-h-[90vh] scale -mb-20 z-20'>
+                    {/* <Image src="/MafiaMan.png" alt='hero' fill className='object-contain'></Image> */}
+                    <Image src="/civWomanB.png" alt='hero' fill className='object-contain'></Image>
                 </div>
             </div>
             {/* </div> */}

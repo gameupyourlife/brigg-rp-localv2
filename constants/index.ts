@@ -13,6 +13,7 @@
       links: [
         { title: "Discord", url: "https://discord.gg/S2wc2NVGaN" },
         { title: "Instagram", url: "https://www.instagram.com/brigg_rp/" },
+        { title: "TikTok", url: "https://www.tiktok.com/@briggrp" },
         // { title: "TeamSpeak", url: "SERVER.BRIGG-RP.ONLINE" },
       ],
     },

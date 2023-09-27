@@ -36,11 +36,11 @@ const HoverCard = ({alink, cover, title, character, mImg, mTitle, mText}: HoverC
                         alt='cover'
                         />
                 </div>
-                <img
+                {/* <img
                     src={title}
                     className={`${styles.title}`}
                     alt='title'
-                    />
+                    /> */}
                 <img
                     src={character}
                     className={styles.character}

@@ -12,7 +12,7 @@ const Discord = () => {
                     Lust zu spielen?
                 </h2>
                 <p className='mb-10 text-center' >
-                    Unser Discord-Server ist der zentrale Treffpunkt für die "Brigg RP"-Community. Hier kannst du dich mit anderen Spielern austauschen, nach RP-Partnern suchen und die neuesten Neuigkeiten und Ankündigungen erfahren. Trete unserer Discord-Familie bei und werde Teil einer lebendigen RP-Community!
+                    Unser Discord-Server ist der zentrale Treffpunkt für die Brigg RP-Community. Hier kannst du dich mit anderen Spielern austauschen und die neuesten Ankündigungen und Neuigkeiten erhalten. Trete unserer Discord-Familie bei und werde Teil einer lebendigen RP-Community!
                 </p>
                 <div className='mb-0 pb-0'>
                     <DiscordButton isSSO={false} url="https://discord.gg/S2wc2NVGaN" />

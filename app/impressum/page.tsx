@@ -2,6 +2,12 @@ import Modal from '@/components/Modal/Modal'
 import TeamCard from '@/components/TeamCards/TeamCard'
 import TeamCardHolder from '@/components/TeamCards/TeamCardHolder'
 import React from 'react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Brigg RP - Impressum',
+    description: 'Das Impressum von Brigg RP.',
+}
 
 export default function Home() {
     return (

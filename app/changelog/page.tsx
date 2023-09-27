@@ -1,5 +1,11 @@
 import { getPostData } from "@/utils/postData"
 import "./styles.css"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Brigg RP - Changelog',
+    description: 'Der Changelog von Brigg RP. Hier findest du alle Änderungen, die auf Brigg RP vorgenommen wurden.',
+}
 
 export default async function Changelog(){
   const postData = await getPostData("changelog")

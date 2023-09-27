@@ -3,6 +3,12 @@ import { getPostData } from "@/utils/postData"
 import "./styles.css"
 import Image from "next/image"
 import { useRef } from "react"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Brigg RP - Regelwerk',
+    description: 'Das Regelwerk von Brigg RP. Hier findest du alle Regeln, die du auf Brigg RP beachten musst.',
+}
 
 
 export default async function Rules(){

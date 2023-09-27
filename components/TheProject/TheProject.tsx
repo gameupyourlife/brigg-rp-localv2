@@ -16,10 +16,11 @@ const TheProject = () => {
             Das Projekt
           </h2>
           <p className="max-w-5xl">
-            Brigg RP ist ein deutscher GTA V Roleplay Server, der auf dem RageMP Framework basiert.
+            Brigg RP ist ein deutscher GTA V Roleplay Server, der auf dem FiveM QBCore Framework basiert.
             Unser Ziel ist es, ein möglichst realistisches und authentisches Spielerlebnis zu schaffen.
             Wir haben es uns zur Aufgabe gemacht, das Spielgeschehen so realitätsnah wie möglich zu gestalten,
             wobei der Spielspaß stets im Vordergrund steht.
+            Um das Spielerlebnis so angenehm wie möglich zu gestalten setzten wir auf communitybasierte Entscheidungen.
           </p>
           <Timeline/>
         </div>

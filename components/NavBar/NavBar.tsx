@@ -37,12 +37,12 @@ const NavBar = () => {
 
             <div className={`${navbarOpen ? "" : "max-md:hidden"} `}>
                 <nav className="max-md:flex max-md:flex-col max-md:text-center max-md:px-5 max-md:align-middle max-md:justify-center max-md:items-center  ">
-                    <Link href="/#factions" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Fraktionen</Link>
-                    <Link href="/#features" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Features</Link>
-                    <Link href="/team" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Team</Link>
-                    <Link href="/rules" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Regeln</Link>
-                    <Link href="/changelog" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Changelog</Link>
-                    <Link target='_blank' href="https://discord.gg/S2wc2NVGaN" className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 text-orange-600 " >Jetzt Spielen!</Link>
+                    <Link href="/#factions" onClick={e => setNavbarOpen(false)}  className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Fraktionen</Link>
+                    <Link href="/#features" onClick={e => setNavbarOpen(false)}  className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Features</Link>
+                    <Link href="/team" onClick={e => setNavbarOpen(false)}  className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Team</Link>
+                    <Link href="/rules" onClick={e => setNavbarOpen(false)}  className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Regeln</Link>
+                    <Link href="/changelog" onClick={e => setNavbarOpen(false)}  className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 " >Changelog</Link>
+                    <Link target='_blank' href="https://discord.gg/S2wc2NVGaN" onClick={e => setNavbarOpen(false)}  className=" md:mx-3 lg:mx-5 max-md:text-2xl nav-item max-md:w-screen max-md:my-3 max-md:mx-0 text-orange-600 " >Jetzt Spielen!</Link>
                 </nav>
             </div>
 
