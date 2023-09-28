@@ -25,7 +25,7 @@ const Hero = () => {
         //     </div>
         // </div>
 
-        <div className="hero relative w-full box-border md:px-20 max-lg:mx-auto ">
+        <div className="hero w-full box-border md:px-20 max-lg:mx-auto ">
             {/* <div className='hero  w-full  h-[inherite] box-border herobgeffects  backdrop-blur-md	'>
             <div className='hero  w-full pl-20 h-[inherite] box-border 	'> */}
 
@@ -33,7 +33,7 @@ const Hero = () => {
                 <h1 className='max-lg:text-center text-6xl font-extrabold pb-3 flex-wrap max-w-screen max-sm:text4xl mx-0 px-0'>
                    Dein Abenteuer beginnt hier!
                 </h1>
-                <p className='max-lg:text-center text-2xl text-gray-200'>
+                <p className='max-md:text-center text-2xl text-gray-200'>
                     Tauche ein in die aufregende Welt von Brigg RP und erlebe Abenteuer wie noch nie zuvor
                 </p>
                 <CustomButton/>
@@ -47,15 +47,15 @@ const Hero = () => {
 
             </div>
                 
-            <div className='flex inherit-height self-end justify-self-end items-end align-bottom justify-end bottom-0 w-full  max-md:hidden -mr-20 md:-mb-[150px] lg:-mb-[200px] xl:-mb-[250px] 2xl:-mb-[300px] bg-red-300'>
-                <div className=' xl:h-full h-[590px] flex items-end justify-end  p-0 m-0  inherit-height   z-30  bg-lime-200 w-'>
-                    <Image src="/civWoman.png" alt='hero' height={900} width={300} className='object-contain'></Image>
+            <div className='hero__image-container max-md:hidden -mr-20 md:-mb-[150px] lg:-mb-[200px] xl:-mb-[250px] 2xl:-mb-[300px] '>
+                <div className='hero__image   p-0  max-h-[90vh] scale-75 z-30  '>
+                    <Image src="/civWoman.png" alt='hero' fill className='object-contain'></Image>
                 </div>
-                <div className='xl:w-full w-[90%] xl:h-full h-[590px] flex items-end  inherit-height justify-end p-0 -mx-[300px]  z-40  '>
-                    <Image src="/gameup-removebg.png" alt='hero'  height={900} width={300} className='object-contain'></Image>
+                <div className='hero__image   p-0 -ml-60 max-h-[90vh] z-40 -mb-10'>
+                    <Image src="/gameup-removebg.png" alt='hero' fill className='object-contain'></Image>
                 </div>
-                <div className='xl:w-full w-[90%] xl:h-full h-[590px] flex items-end justify-end inherit-height  p-0   z-20  '>
-                    <Image src="/civWomanB.png" alt='hero'  height={900} width={300} className='object-contain'></Image>
+                <div className='hero__image   p-0 -ml-60  max-h-[90vh] z-20 -mb-20'>
+                    <Image src="/civWomanB.png" alt='hero' fill className='object-contain'></Image>
                 </div>
             </div>
 
