@@ -20,7 +20,7 @@ const AccordionItem = ({title, text, opened}: AccordionItemI) => {
 
     return (
         <div className="py-2">
-            <h2>
+            <h3>
 
                 <button id="faqs-title-01" type="button" className="flex items-center justify-between w-full text-left font-semibold py-2" onClick={e => SetOpen(!open)}>
                     <span>{title}</span>
@@ -29,7 +29,7 @@ const AccordionItem = ({title, text, opened}: AccordionItemI) => {
                         <rect y={7} width={16} height={2} rx={1} className="transform origin-center rotate-90 transition duration-200 ease-out" style={open ? { transform: "rotate(180deg)" } : {}} />
                     </svg>
                 </button>
-            </h2>
+            </h3>
             <div id="faqs-text-01" role="region" aria-labelledby="faqs-title-01" className={`grid text-sm text-slate-300 overflow-hidden transition-all duration-300 ease-in-out ${open ? styles.show : styles.hide}`}>
                 <div className="overflow-hidden">
                     <p className="pb-3">

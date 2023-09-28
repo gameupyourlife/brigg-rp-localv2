@@ -8,14 +8,13 @@ import Footer from '@/components/Footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Brigg RP - Dein Roleplay Server',
+  title: 'Brigg RP - Dein GTA Roleplay Server',
   description: 'Brigg RP ist ein deutscher GTA V Roleplay Server. Wir bieten dir ein einzigartiges Spielerlebnis mit vielen Features und einem aktiven Team.',
-  
 }
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="de">
       <body className={`text-[var(--text)] ${inter.className}`}>
         <Background />
 

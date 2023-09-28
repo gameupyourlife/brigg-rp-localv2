@@ -8,13 +8,6 @@ import SectionTransitionMarker from '../SectionTransitonMarker/SectionTransitonM
 const FAQ = () => {
     return (
         <div id='faq' >
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" />
-            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-            <script src="https://cdn.tailwindcss.com"></script>
-            <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
-            <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
             <SectionTransitionMarker trany='70px' rotation='1.3deg'/>
 
             <div className="relative font-inter antialiased bg-[var(--background)] text-[var(--text)] ">
@@ -37,6 +30,7 @@ const FAQ = () => {
                             <AccordionItem title='Kann ich meinen Charakter anpassen?' text='Ja, du kannst deinen Charakter nach deinen Vorstellungen gestalten und seine Hintergrundgeschichte entwickeln. Wir ermutigen die Spieler, kreativ zu sein und einzigartige Charaktere zu erstellen.' />
                             <AccordionItem title='Wie bleibe ich über Neuigkeiten und Events auf dem Laufenden?' text='Halte dich über unseren Discord-Server auf dem Laufenden. Wir posten regelmäßig Updates, Ankündigungen und Informationen zu geplanten Events.' />
                             <AccordionItem title='Muss ich als neuer RP Spieler etwas beachten?' text='Neue RP-Spieler auf Brigg RP sollten sich einfach auf eine spannende Reise vorbereiten! Beachte die Regeln, sei kreativ und hab Spaß in Los Santos.' />
+                            <AccordionItem title='Was brauche ich um zu spielen?' text='Um bei uns Gta 5 Rp spielen zu können brauchst du eine legale Version von Gta, den FiveM launcher sowie TeamSpeak mit der neusten SaltyChat Version und Discord. Hast du diese Voraussetzungen erfüllt steht deinem GTA RP Erlebnis nichts mehr im Weg' />
 
                         </div >
 

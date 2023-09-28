@@ -12,7 +12,7 @@ export default function Team2() {
 
                 <div className="max-w-[85rem] px-4  pb-10 sm:px-6 lg:px-8 lg:pb-14 mx-auto  ">
                     <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-                        <h2 className="text-4xl font-bold md:text-4xl md:leading-tight dark:text-white">
+                        <h2 className="text-4xl font-bold md:text-4xl md:leading-tight text-[var(--text)]">
                             Das Brigg Team
                         </h2>
                         {/* <p className="mt-1 text-gray-600 dark:text-gray-400">Creative people</p> */}

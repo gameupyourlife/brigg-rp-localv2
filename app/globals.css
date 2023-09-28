@@ -87,13 +87,16 @@ body {
 }
 
 .hero__image-container {
-  @apply xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen;
+  @apply xl:flex-[1.5] flex justify-end items-end w-full h-full;
 }
 
 .hero__image {
-  @apply relative xl:w-full w-[90%] xl:h-full h-[590px] z-0;
+  @apply  xl:w-full w-[90%] xl:h-full h-[590px] z-0;
 }
 
+.inherit-height {
+  height: inherit;
+}
 
 
 /* body {	
@@ -108,10 +111,8 @@ body {
 } */
 
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
 
 body {
-  font-family: 'Raleway', sans-serif;
   color: #333;
 }
 
@@ -432,7 +433,6 @@ header p {
 /* ----------------------------------------------- */
 
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* * {
   box-sizing: border-box;
@@ -464,7 +464,6 @@ header {
 
 .nav-item {
   position: relative;
-  color: #fff;
   font-size: 1rem;
   font-weight: 500;
   line-height: 25px;
