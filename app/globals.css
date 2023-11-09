@@ -27,7 +27,9 @@ html {
   --background: #141419;
   --background-lighter: #262631;
   --accentbase: 45, 175, 240;
+  --accentbase-lighter: 95, 205, 240;
   --accent: rgb(var(--accentbase));
+  --accent-lighter: rgb(var(--accentbase-lighter));
 
 
 

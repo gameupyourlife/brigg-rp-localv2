@@ -8,21 +8,22 @@ import Footer from '@/components/Footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Brigg RP - Dein GTA Roleplay Server',
-  description: 'Brigg RP ist ein deutscher GTA V Roleplay Server. Wir bieten dir ein einzigartiges Spielerlebnis mit vielen Features und einem aktiven Team.',
+    title: 'Brigg RP - Dein GTA Roleplay Server',
+    description: 'Brigg RP ist ein deutscher GTA V Roleplay Server. Wir bieten dir ein einzigartiges Spielerlebnis mit vielen Features und einem aktiven Team.',
 }
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
-  return (
-    <html lang="de">
-      <body className={`text-[var(--text)] ${inter.className} min-h-screen `}>
-        <Background />
+    return (
+        <html lang="de">
+            <body className={`text-[var(--text)] ${inter.className} min-h-screen bg-[var(--background)]  flex flex-col  p-0 m-0`}>
+                {/* <Background /> */}
 
-        <NavBar />
-        {children}
 
-        <Footer />
-      </body>
-    </html>
-  )
+                <NavBar />
+                {children}
+
+                <Footer />
+            </body>
+        </html>
+    )
 }

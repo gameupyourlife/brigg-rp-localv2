@@ -5,7 +5,7 @@ import { footerLinks } from '@/constants'
 
 const Footer = () => {
   return (
-    <footer  id='footer' className='flex relative flex-col text-black-100 pt-5 border-t border-[var(--background-lighter)] bg-[var(--background)] text-[var(--text)] '>
+    <footer  id='footer' className='mt-auto z-30 flex w-full relative flex-col text-black-100 pt-5 border-t border-[var(--background-lighter)] bg-[var(--background)] text-[var(--text)] '>
         <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10">
             <div className='flex flex-col justify-start md:items-start gap-6 max-md:items-center max-md:text-center'>
                 {/* <Image src="/brigglogo.svg" alt="Logo" width={118} height={18} className='object-contain' /> */}

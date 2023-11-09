@@ -13,7 +13,8 @@ var pool = mysql.createPool({
 async function getLocalJsonData(): Promise<any[]> {
 
     return new Promise((resolve, reject) => {
-        if (process.cwd().includes("xxx")) {
+        console.log("process.cwd()", process.cwd());
+        if (process.cwd().includes("var/www/html")) {
             fs.readFile("../../../../rpserver/main/txData/default/data/playersDB.json", 'utf8', (err, data) => {
                 if (err) {
                     // console.error(err);

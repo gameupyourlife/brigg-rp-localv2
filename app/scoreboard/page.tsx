@@ -1,6 +1,10 @@
+
 import BackgroundBGColor from "@/components/Background/BackgroundBGColor";
 import { getAllPlayerNamesFromDB, readDataFromDB, writeJsonDataToDB } from "@/utils/dbConnection";
 import Image from "next/image";
+
+// export const revalidate = 300 // revalidate the data at most every 5 min
+export const dynamic = 'force-dynamic'
 
 async function getAllPlayerNames(arr: Array<any>) {
     // var allPlayerNames:any = [];
@@ -17,9 +21,8 @@ async function getAllPlayerNames(arr: Array<any>) {
 export default async function Scoreboard() {
     const leg: any = await writeJsonDataToDB();
     const playersInTop30: any = await readDataFromDB();
-    // // const objectArray:Array<any> = Object.entries(arr);
     const allPlayerNames: any = await getAllPlayerNames(playersInTop30);
-    // console.log(allPlayerNames);
+    
     var numOfChars: number = 0;
     var zero = 0;
 

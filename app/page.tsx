@@ -10,10 +10,11 @@ import Discord from '@/components/Discord/Discord'
 
 export default function Home() {
   return (
-    <main className='' >
+    <main className='m-0 p-0 w-full' >
       {/* <div className="relative w-[60vw] aspect-auto bg-black ">
         <Image src="/HeroImage.png" alt="Current Image" layout={'fill'} objectFit={'contain'} />
       </div> */}
+                <Background />
 
         <Hero/>
         <TheProject/>
