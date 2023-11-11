@@ -29,7 +29,7 @@ Die Wirtschaft bereitet mir schon seit dem ersten Tag, seit welchem ich an diese
 
 Wir sind, um eben jenes Ziel erfüllen zu können, dabei in großem Style Daten zu erheben, um die aktuelle wirtschaftliche Situation auf dem Server beurteilen zu können. Dabei geht es uns dann nicht nur um, wer wie viel Geld hat, sondern insbesondere darum genauer zu beobachten, wie und in welchen Mengen, Geld in dem Wirtschaftssystem zirkuliert aber auch wie es rein und rausfließt.
 
->![Aktuelles Wirtschaft Dashboard](http://localhost:3000/_next/image?url=%2FPosts%2FBrigg_RP_Economy_Dashboard.jpg&w=1080&q=100 "Unser aktueller Stand der Wirtschaftsauswertung")
+>![Aktuelles Wirtschaft Dashboard](http://brigg-rp.online/_next/image?url=%2FPosts%2FBrigg_RP_Economy_Dashboard.jpg&w=1080&q=100 "Unser aktueller Stand der Wirtschaftsauswertung")
 > Unser aktueller Stand der Wirtschaftsauswertung
 
 Um diese Daten erheben zu können bedarf es von unserer Seite aus viel Backend Arbeit, um vorhandene Scripte mit unserem Logging System zu verknüpfen und so jegliche Transaktion auf unserem Server abspeichern zu können. Neben der Beschaffung der Daten ist die Auswertung der Daten unabdingbar. Aufgrund dieser Data Science wollen wir, auch gemeinsam mit euch, unser gesamtheitliches Wirtschaftskonzept erstellen und so zu einer spaßigen und zufriedenstellenden Wirtschaft gelangen.

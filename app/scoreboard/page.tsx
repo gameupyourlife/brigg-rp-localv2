@@ -4,7 +4,7 @@ import { getAllPlayerNamesFromDB, readDataFromDB, writeJsonDataToDB } from "@/ut
 import Image from "next/image";
 
 // export const revalidate = 300 // revalidate the data at most every 5 min
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
 
 async function getAllPlayerNames(arr: Array<any>) {
     // var allPlayerNames:any = [];
