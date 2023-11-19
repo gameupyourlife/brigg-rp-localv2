@@ -3,8 +3,8 @@ import BackgroundBGColor from "@/components/Background/BackgroundBGColor";
 import { getAllPlayerNamesFromDB, readDataFromDB, writeJsonDataToDB } from "@/utils/dbConnection";
 import Image from "next/image";
 
-// export const revalidate = 300 // revalidate the data at most every 5 min
-// export const dynamic = 'force-dynamic'
+export const revalidate = 300 // revalidate the data at most every 5 min
+export const dynamic = 'force-dynamic'
 
 async function getAllPlayerNames(arr: Array<any>) {
     // var allPlayerNames:any = [];

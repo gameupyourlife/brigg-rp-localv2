@@ -283,7 +283,7 @@ export default function Team2() {
                                         @lob_star
                                     </h3>
                                     <p className="mt-1 text-xs uppercase text-gray-500">
-                                        Community Manager
+                                        Community Manager/Support Leitung
                                     </p>
                                 </div>
                                 <div className="mt-2 sm:mt-auto space-x-2.5">

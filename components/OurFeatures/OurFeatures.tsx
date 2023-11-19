@@ -27,7 +27,7 @@ const OurFeatures = () => {
           
           <div>
           <Feature img='/Icons/performance.png' title='Performance' text='Dich erwartet ein nahezu lagfreies Spielerlebnis verbunden mit einer sehr geringen Downtime.'/>
-          <Feature img='/Icons/gruppe.png' title='Medic System' text='Unser detailliertes Gesundheitssystem sorgt für starkes Medic RP. Von Schmerztherapie über Narkose, bis hin zu Bluttransfusion.' />
+          <Feature img='/Icons/medizin.png' title='Medic System' text='Unser detailliertes Gesundheitssystem sorgt für starkes Medic RP. Von Schmerztherapie über Narkose, bis hin zu Bluttransfusion.' />
           </div>
         </div>
 
