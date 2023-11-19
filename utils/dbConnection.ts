@@ -25,14 +25,14 @@ async function getLocalJsonData(): Promise<any[]> {
             });
         }
         else {
-            fs.readFile("public/playersDB.json", 'utf8', (err, data) => {
-                if (err) {
-                    // console.error(err);
-                    reject(err);
-                } else {
-                    resolve(JSON.parse(data));
-                }
-            });
+            // fs.readFile("public/playersDB.json", 'utf8', (err, data) => {
+            //     if (err) {
+            //         // console.error(err);  
+            //         reject(err);
+            //     } else {
+            //         resolve(JSON.parse(data));
+            //     }
+            // });
         }
     });
 }
