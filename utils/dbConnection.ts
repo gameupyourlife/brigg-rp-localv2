@@ -25,7 +25,7 @@ async function getLocalJsonData(): Promise<any[]> {
             });
         }
         else {
-            fs.readFile("./utils/playersDB.json", 'utf8', (err, data) => {
+            fs.readFile("./playersDB.json", 'utf8', (err, data) => {
                 if (err) {
                     // console.error(err);
                     reject(err);
