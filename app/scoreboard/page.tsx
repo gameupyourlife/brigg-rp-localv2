@@ -1,3 +1,4 @@
+'use client'
 
 import BackgroundBGColor from "@/components/Background/BackgroundBGColor";
 import { getAllPlayerNamesFromDB, readDataFromDB, writeJsonDataToDB } from "@/utils/dbConnection";
@@ -19,10 +20,13 @@ async function getAllPlayerNames(arr: Array<any>) {
 }
 
 export default async function Scoreboard() {
-    const leg: any = await writeJsonDataToDB();
-    const playersInTop30: any = await readDataFromDB();
-    const allPlayerNames: any = await getAllPlayerNames(playersInTop30);
-    
+    // const leg: any = await writeJsonDataToDB();
+    // const playersInTop30: any = await readDataFromDB();
+    // const allPlayerNames: any = await getAllPlayerNames(playersInTop30);
+    const leg: any = await fetch("http://localhost:3000/api/scoreboard/JsonToDB").then((res) => res.json());
+    const playersInTop30: any = await fetch("http://localhost:3000/api/scoreboard/ReadDataFromDB").then((res) => res.json());
+    const allPlayerNames: any = await fetch("http://localhost:3000/api/scoreboard/GetAllPlayersFromDB").then((res) => res.json());
+
     var numOfChars: number = 0;
     var zero = 0;
 

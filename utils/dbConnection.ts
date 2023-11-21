@@ -1,4 +1,6 @@
 
+"use server";
+
 import fs from 'fs';
 const mysql = require('mysql2');
 
@@ -10,7 +12,7 @@ var pool = mysql.createPool({
     database: "QBCoreMain"
 });
 
-async function getLocalJsonData(): Promise<any[]> {
+export async function getLocalJsonData(): Promise<any[]> {
 
     return new Promise((resolve, reject) => {
         console.log("process.cwd()", process.cwd());
