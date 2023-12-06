@@ -21,7 +21,7 @@ export async function middleware(request: NextRequest) {
     // console.log(request.query);
     // url.searchParams.set('viewport', viewport)
     // console.log(request.nextUrl)
-    fetch("http://localhost:3000/api/log/client", {
+    const res = await fetch("http://localhost:3000/api/log/client", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -33,11 +33,11 @@ export async function middleware(request: NextRequest) {
             browser: request.headers.get("user-agent"),
             host: request.headers.get("host"),
         })
-    }).then(function (res) {
-        // console.log(res.json());
     }).catch(function (err) {
         console.log("Unable to fetch -", err);
     })
+
+    console.log(res);
 
     return NextResponse.rewrite(url)
 }
