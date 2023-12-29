@@ -36,3 +36,4 @@ export async function logClientData({ data, tries }: {data:any, tries?:number}) 
         }
     });
 }
+
