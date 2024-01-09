@@ -3,6 +3,9 @@ import BackgroundBGColor from "@/components/Background/BackgroundBGColor";
 import Scoreboard from "@/components/Scoreboard/Scoreboard";
 import { getAllPlayerNamesFromDB, readDataFromDB, writeJsonDataToDB } from "@/utils/dbConnection";
 import Image from "next/image";
+import { useSyncExternalStore } from 'react';
+import { headers } from 'next/headers'
+
 
 // export const revalidate = 300 // revalidate the data at most every 5 min
 // export const dynamic = 'force-dynamic'
@@ -32,9 +35,11 @@ export default async function ScoreboardPage() {
     const leg: any = await writeJsonDataToDB();
     const playersInTop30: any = await readDataFromDB();
     const allPlayerNames: any = await getAllPlayerNames(playersInTop30);
-//     // const leg: any = null;
-//     // const playersInTop30: any = null;
-//     // const allPlayerNames: any = null;
+    const headersList = headers() // Used to force dynamic rendering
+
+    //     // const leg: any = null;
+    //     // const playersInTop30: any = null;
+    //     // const allPlayerNames: any = null;
 
     // console.log("Scoreboard");
     // await fetch("http://localhost:3000/api/scoreboard/JsonToDB").then((res) => res.json());

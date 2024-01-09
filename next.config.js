@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-        serverActions: true,
-    }
 }
 
 // Example config for adding a loader that depends on babel-loader
