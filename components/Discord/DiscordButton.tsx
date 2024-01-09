@@ -1,3 +1,5 @@
+"use client"
+
 /* React Component Version */
 import React from "react";
 import ReactDOM from "react-dom";
@@ -21,7 +23,7 @@ const DiscordButton = ({ isSSO, url }: DiscordButtonI) => (
 			textDecoration: "none"
 		}}
 		target="_blank"
-
+        onClick={() => gtag('event', 'conversion', { 'send_to': 'AW-940661394/HnRhCMLMlv0YEJK1xcAD'})}
         className="max-h-10"
 	>
 		<div style={{ width: 25, height: 25, marginRight: 15 }}  className="text-[var(--text)]  fill-white">

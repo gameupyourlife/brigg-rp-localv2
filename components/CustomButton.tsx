@@ -1,10 +1,11 @@
+"use client"
 import Link from 'next/link'
 import React from 'react'
 
 const CustomButton = () => {
     return (
         <div className="w-full flex items-center outline-none pt-5 max-md:align-middle max-md:justify-center">
-            <a href="https://discord.gg/S2wc2NVGaN" target='_blank' className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow text-[var(--text)] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[var(--background)] group">
+            <a href="https://discord.gg/S2wc2NVGaN" onClick={() => gtag('event', 'conversion', { 'send_to': 'AW-940661394/HnRhCMLMlv0YEJK1xcAD'})} target='_blank' className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow text-[var(--text)] transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-[var(--background)] group">
                 <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-orange-600 group-hover:h-full"></span>
                 <span className="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

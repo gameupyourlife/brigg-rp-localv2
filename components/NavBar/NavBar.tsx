@@ -14,6 +14,8 @@ const NavBar = () => {
         setNavbarOpen(!navbarOpen)
     }
 
+    // <!-- Event snippet for Discord conversion page -->
+    // gtag('event', 'conversion', {'send_to': 'AW-940661394/HnRhCMLMlv0YEJK1xcAD'});
     function gtag_report_conversion(url:any) {
         var callback = function () {
             if (typeof (url) != 'undefined') {

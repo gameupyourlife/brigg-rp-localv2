@@ -35,12 +35,21 @@ export async function getLocalJsonData(): Promise<any[]> {
             //         resolve(JSON.parse(data));
             //     }
             // });
+            resolve([null]);
+
         }
     });
 }
 
 export async function writeJsonDataToDB() {
     const data: any = await getLocalJsonData();
+    console.log("data", data);
+    
+    if (data == null || data == undefined || data == "") {
+        console.log("data is null");
+        return;
+    }
+
     // console.log(data);
 
     pool.getConnection(function (err: any, connection: any) {

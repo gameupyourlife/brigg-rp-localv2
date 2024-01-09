@@ -12,9 +12,12 @@ import { NextRequest, NextResponse, userAgent } from 'next/server'
 
 // This function can be marked `async` if using `await` inside
 export async function middleware(request: NextRequest) {
+
+
     // const { ip, nextUrl } = request;
 
     const url = request.nextUrl
+
     const { device } = userAgent(request)
     const viewport = device.type === 'mobile' ? 'mobile' : 'desktop'
     const detectedIp = request.ip;
