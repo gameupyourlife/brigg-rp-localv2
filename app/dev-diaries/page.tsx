@@ -7,6 +7,7 @@ import { getAllPostIds, getPostData, getSortedPostsData } from "@/utils/postData
 import Link from 'next/link';
 import Tag from '@/components/Posts/Tag';
 // import "./styles.css"
+import { headers } from 'next/headers'
 
 const postFolder = "dev-diaries";
 const MAX_DISPLAY = 999
@@ -20,10 +21,13 @@ const MAX_DISPLAY = 999
 //     }))
 // }
 
+
+
 // Multiple versions of this page will be statically generated
 // using the `params` returned by `generateStaticParams`
 export default async function Page() {
     const posts = getSortedPostsData(postFolder);
+    const headersList = headers() // Used to force dynamic rendering
 
     return (
         // <section className={`pt-20`}>

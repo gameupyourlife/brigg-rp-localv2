@@ -34,6 +34,19 @@ const NavBar = () => {
         return false;
     }
 
+    useEffect(() => {
+        const nav = document.getElementById('navbar');
+        let viewportHeight = window.innerHeight;
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0 ) {
+                nav?.classList.add("bg-[var(--background)]");
+            }
+            else {
+                nav?.classList.remove("bg-[var(--background)]");
+            }
+        };
+    }, []);
 
 
 
@@ -41,7 +54,7 @@ const NavBar = () => {
 
 
     return (
-        <header className=' z-50   bg-[var(--background)]  py-3 flex max-md:flex-col'>
+        <header id='navbar' className='z-50 py-3 flex max-md:flex-col duration-200 transition-colors'>
          
 
             <div className='flex justify-between max-md:w-full '>

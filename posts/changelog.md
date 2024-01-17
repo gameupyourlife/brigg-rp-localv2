@@ -1,5 +1,49 @@
 # Änderungsprotokoll (Changelog)
+
+## 09.01.2024
+- Winter hat Auszug gehalten
+
+## 03.12.2023
+- Einen schönes 1. Advent 🙂
+- Realtime
+- Kleine Bugfixes wie immmer halt :D
+
+## 03.11.2023 - 11:20
+- Neues Telefon 😄
+    > Besten Dank an die Spender **Mike, Marc & Kenny** :) 
     
+    (Die Taste zum Öffnen müsst ihr in dein FiveM Tastaturbelegungen ändern)
+    Keine Angst, alle Kontakte sind erhalten geblieben 🙂
+    Das Telefon gibt es auch in Unterschiedlichen Farben im Hardware Store.
+
+    Ihr werdet alle erst einmal keines haben, bitte an den Support wenden wenn ihr IC seit, wir geben euch dann eins.
+    Bitte dazu einfach ein "ingame" Ticket öffnen. Bitte gleich die Spieler ID (die ihr ingame habt gerade) mit dazuschreiben.
+
+## Freitag 29.10.2023
+- Neues Casino mit dazugehörigen Spielen
+- Würfelspiele eingefügt /dice
+- Schere Stein Papier eingefügt /rps
+- Graffittis eingefügt
+
+## 12.10.2023 - 16:50 Uhr
+- Die Berta hat eine Gehaltserhöhung bekommen, jetzt macht sie ihre Arbeit wieder richtig
+- Das Gesundheitssystem erstrahlt nun in den Brigg Farben
+- Das Rathaus erstrahlt nun in den Brigg Farben und ist auf Deutsch übersetzt
+- Zur Fahrschule
+    - Geschwindigkeiten an die StvLO angepasst
+    - Preise angehoben
+- Die Mechaniker müssen jetz Materialien sammeln um Werkzeuge und Fahrzeugteile herzustellen
+- Alle Importfahrzeuge wurden entfernt
+- Für alle Fahrzeuge konnte ein ersatz gefunden werden, betrifft vorallem PD, MD und LSC
+- Das BriggRP Logo ist wieder da
+- Das MD kann jetzt Rettungstragen benutzen
+    > F1 > Stretcher
+- Das Telefon hat jetzt instagram
+- Die Führerscheine können wieder ohne Probleme gekauft werden
+    > Wenn ihr einen Motorradführerschein habt, kauft einfach den Führerschein. Hier gibt es nun den Zusatz Klasse A
+- Ragdoll ist jetzt wieder verfügbar
+    > Taste: +
+
 ## 17.09.2023 - 16 Uhr
 - das neue Health System ist nun über die Taste U aufrufbar. Oben rechts hab ihr ein Personen Icon, dort könnt ihr Personen in eurer Nähe "Checken" und evtl. mit Erste Hilfe Kit heilen. (nur im äußersten Notfall, Macht aber immer erstmal eine HLW 😄
 - Erste Hilfe Kästen müssen darüber benutzt werden. Wichtig! Bei Benutzung ist der Besuch im MD (auch bei Bertha) zwingend erforderlich. Alles andere wird als FailRP gewertet.

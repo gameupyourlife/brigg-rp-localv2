@@ -5,10 +5,16 @@
     {
       title: "Allgemeines",
       links: [
-        { title: "Impressum", url: "/impressum" },
         { title: "Leaderboard", url: "/scoreboard" },
         { title: "Was ist GTA RP?", url: "/was-ist-gta-rp" },
         { title: "GTA RP Server für Anfämger", url: "/gta-rp-server-fuer-anfaenger" },
+      ],
+    },
+    {
+      title: "Rechtliches",
+      links: [
+        { title: "Impressum", url: "/impressum" },
+        { title: "Datenschutzerklärung", url: "/datenschutz" },
       ],
     },
     {
