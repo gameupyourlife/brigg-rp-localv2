@@ -20,7 +20,7 @@
     "markdown-loader": "^8.0.0",
     "marked": "^9.0.3",
     "mime": "^4.0.1",
-    "mysql2": "^3.6.1",
+    "mysql2": "^3.9.4",
     "next": "^14.0.4",
     "postcss": "8.4.30",
     "raw-loader": "^4.0.2",
